@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="24dp">
+
+        <!-- Seek Bar  -->
+        <androidx.media3.ui.DefaultTimeBar
+            android:id="@+id/exo_progress"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Time labels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/exo_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/exo_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!-- Controls Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/exo_rew"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_media_rew"
+                android:contentDescription="Rewind"
+                app:tint="@color/white" />
+
+            <!-- Play/Pause must be a FrameLayout with exo_play and exo_pause icons for ExoPlayer compatibility -->
+            <ImageButton
+                android:id="@+id/exo_play_pause"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_media_play"
+                android:contentDescription="Play/Pause"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/exo_ffwd"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_media_ff"
+                android:contentDescription="Forward"
+                app:tint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
