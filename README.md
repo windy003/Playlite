@@ -11,22 +11,22 @@ Playlite is a modern Android video player and file explorer app. It allows users
 - **Double Back to Exit**: Prevents accidental app exits from the file browser by requiring a double back press.
 - **Permissions**: Handles storage permissions for different Android versions.
 
-## Screenshots
-
-*(Add screenshots here)*
 
 ## Getting Started
 
 ### Prerequisites
+
 - Android Studio (latest recommended)
 - Android device or emulator (API 23+)
 
 ### Building and Running
+
 1. Clone the repository.
 2. Open the project in Android Studio.
 3. Build and run the app on your device or emulator.
 
 ### Permissions
+
 - The app requests `READ_EXTERNAL_STORAGE` and, for Android 11+, `MANAGE_EXTERNAL_STORAGE` to access files.
 
 ## Project Structure
@@ -39,22 +39,24 @@ Playlite is a modern Android video player and file explorer app. It allows users
 - `res/drawable/`: Contains vector and shape drawables for icons and backgrounds.
 
 ## Customization
+
 - **Player Controls**: The player uses a custom control layout (`exo_player_control_view.xml`) for a modern look.
 - **File Icons**: Directory and file icons can be customized in `FileListAdapter.kt` and `res/drawable/`.
 
 ## Known Issues
+
 - Some features may require additional permissions on Android 11+.
 - Only common video formats are supported by default.
 
 ## License
 
-*(Specify your license here, e.g., MIT, Apache 2.0, etc.)*
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Credits
+
 - [ExoPlayer (AndroidX Media3)](https://developer.android.com/guide/topics/media/exoplayer)
 - [Material Components for Android](https://material.io/develop/android)
 
 ---
 
-*This README was generated based on the current project files.*
-
+_This README was generated based on the current project files._
